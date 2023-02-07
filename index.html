@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number guess</title>
+    <link href="index.css" rel="stylesheet">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="main">
+        <header>
+            <h1>Number Guessing Game</h1>
+        </header>
+        <div class="content">
+            <p>Guess the number.You will be given 10 turns to find the number and we will tell wheather it is low or high.</p>
+            <form>
+                <label>Enter a number:</label>
+                <input type="number" id="guessInput" >
+                <input type="button" value="submit guess" onclick="checkGuess()" id="submitGuess">
+            </form>
+            <p>previous Guess:</p>
+            <p id="previousGuess"></p>
+            <div id="guessResult"></div>
+        </div>
+    </div>
+</body>
+</html>
